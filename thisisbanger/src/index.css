@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #ffffff;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* tengo una idea que aun no se como desarrollarlo  */
+::-webkit-scrollbar{
+  display: none;
+  
+  margin-left: -2px;
+  width: 5px;
+  background-color: #00000000;
+  position: fixed;
+}
+::-webkit-scrollbar-track{
+  background-color: #00000000;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ffffff1c; 
+  backdrop-filter: blur(3px);
+  border-radius: 3px;
+}
+
+:hover#instagram {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 1px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+:hover#twitter {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 2px 0px 2px;
+  background: #00ACEE;
+}
+
+:hover#whatsapp {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 2px 2px 2px;
+  background: #25D366;
+}
+
+#thisisbanger {
+  border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
+}
+
+#TransparentBox {
+  background: #00000055; 
+  backdrop-filter: blur(3px);
+}
+
+#NuestrosShows {
+  background-image: url(./assets/img/bg-ns.jpg);
+  background-size: cover;
+}
+
+#team {
+  background-image: url(./assets/img/JAVIERBANG3.jpg);
+  background-size: cover;
+}
+
