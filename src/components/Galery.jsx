@@ -14,28 +14,24 @@ function Galery() {
   useEffect(() => {
     gsap.from("div > .arriba", {
       scrollTrigger: {
-        trigger: 'arriba',
-        toggleActions: "restart pause resume none",
-        start: "top 50%",
-        end: "bottom 50%",
+        trigger: '.arriba',
+        start: "top center",
+        end: "bottom 10%",
       },
-      duration: 5,
-      ease: 'circ',
       y: -300,
+      duration: 5,
     })
   },[])
 
   useEffect(() => {
   gsap.from("div > .abajo", {
     scrollTrigger: {
-      trigger: 'abajo',
-      toggleActions: "restart pause resume none",
-      start: "top 50%",
-      end: "bottom 50%",
+      trigger: '.abajo',
+      start: "top center",
+      end: "bottom 10%",
     },
-    duration: 5,
-    ease: 'circ',
     y: 300,
+    duration: 5,
   })
   },[])
 

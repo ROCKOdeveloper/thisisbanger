@@ -1,25 +1,23 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Thisis from "../assets/img/thisisbanger.png";
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function AboutUs() {
-
   useEffect(() => {
-    const ThisAboutUs = document.querySelector('.ThisAboutUs');
-    gsap.from(ThisAboutUs,{
-    scrollTrigger: {
-      trigger: ThisAboutUs,
-      toggleActions: "restart pause resume none",
-      start: "top 50%",
-      end: "bottom 50%",
-    },
-    duration: 8,
-    ease: 'elastic',
-    rotate: 1000,
-    })
-  }, [])
+    const ThisAboutUs = document.querySelector(".ThisAboutUs");
+    gsap.from(ThisAboutUs, {
+      scrollTrigger: {
+        trigger: ThisAboutUs,
+        toggleActions: "restart pause resume none",
+        start: "top center",
+        end: "bottom 10%",
+      },
+      x: 300,
+      duration: 5,
+    });
+  }, []);
 
   return (
     <section className="bg-black text-center lg:text-left" id="aboutUs">
@@ -34,9 +32,9 @@ function AboutUs() {
                 QUINES SOMOS
               </h2>
               <p className="text-white lowercase">
-                Somos una compañía que enfocada al entretenimiento y
-                vida nocturna ha creado perfiles multifacéticos con los cuales
-                se posiciona como la marca no colectivo más reciente pionera en
+                Somos una compañía que enfocada al entretenimiento y vida
+                nocturna ha creado perfiles multifacéticos con los cuales se
+                posiciona como la marca no colectivo más reciente pionera en
                 Barranquilla-Colombia y liderados por el visionario empírico
                 Javier Bang, superamos los límites de las posibilidades para
                 crear y ofrecer experiencias fuera de este mundo. <br /> Javier
@@ -50,7 +48,7 @@ function AboutUs() {
             <img
               id="thisisbanger"
               src={Thisis}
-              className="p-6 lg:w-3/4 h-auto lg:pt-20 ThisAboutUs fixed"
+              className="p-6 lg:w-3/4 h-auto hidden md:flex lg:pt-20 ThisAboutUs"
               alt="This Is Banger"
             />
           </div>
